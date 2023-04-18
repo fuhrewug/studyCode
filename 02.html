@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+  const h3 = document.createElement('h3')
+  h3.innerHTML = '我是标题3'
+  document.body.appendChild(h3)
+  const h2 = document.createElement('h2')
+  h2.innerText = '我是标题2'
+  document.body.prepend(h2)  //将在body的最前面插入 该node节点
+  let arr = [
+    { a: 1 },
+    { a: 2 },
+    { a: 3 },
+    { a: 4 },
+  ]
+  // let str = 'hello/hello/hello'
+  let path = { str: 'hello/hello/hello' }
+  let arr2 = arr.map((i) => {
+    console.log(path.str.split('/')[0]);
+    return i
+  })
+  console.log(arr);  
+</script>
+
+</html>
