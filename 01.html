@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+  const list = '😀😫😀😫🤪';
+  // console.log(Array.from(list));; // [😀, 😫, 😀, 😫, 🤪]
+  const set = new Set(['😀', '😫', '😀', '😫', '🤪']);
+  console.log(set);
+  console.log(Array.from(set));; // [😀, 😫, 🤪]
+  const range = (n) => Array.from({ length: n }, (_, i) => i + 1);
+  console.log(range(10)); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+</script>
+
+</html>
